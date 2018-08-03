@@ -1,0 +1,55 @@
+body{
+    font-size: 200%;
+}
+*{
+    box-sizing: border-box;
+    vertical-align: center;
+    margin: 0;
+}
+.header {
+    background: gainsboro;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+.main{
+    width: 80%;
+    margin-right: 5px;
+}
+.page1  {
+    background: pink;
+    height: 600px;
+}
+.page2 {
+    background: paleturquoise;
+    height: 600px;
+}
+
+.sidebar {
+    background: gainsboro;
+    width: 20%;
+    margin-left: 5px;
+}
+
+.footer {
+    background: gainsboro;
+    height: 80px;
+}
+
+.control-panel{
+    border: black 1px solid;
+    margin: 10px;
+    padding: 3px;
+
+}
+
+.control-panel-inner{
+    display: flex;
+    flex-direction: row;
+    font-size: 75%;
+    padding: 5px 0;
+}
