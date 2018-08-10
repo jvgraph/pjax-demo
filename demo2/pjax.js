@@ -25,8 +25,11 @@
                 /**
                  * this.oldContainer is the HTMLElement of the old Container
                  */
-
-                return $(this.oldContainer).promise();
+                return $(this.oldContainer).css({
+                    position: 'absolute',
+                    top: '0',
+                    left: '0'
+                }).promise();
             },
 
             fadeIn: function () {
@@ -35,16 +38,9 @@
                  * At this stage newContainer is on the DOM (inside our #barba-container and with visibility: hidden)
                  * Please note, newContainer is available just after newContainerLoading is resolved!
                  */
-
                 var _this = this;
                 var $el = $(this.newContainer);
-                var $old = $(this.oldContainer);
 
-                $old.css({
-                    position: 'absolute',
-                    top: '0',
-                    left: '0'
-                });
                 $el.css({
                     visibility: 'visible',
                     opacity: 0
@@ -55,7 +51,6 @@
                      * Do not forget to call .done() as soon your transition is finished!
                      * .done() will automatically remove from the DOM the old Container
                      */
-
                     _this.done();
                 });
             }
@@ -70,7 +65,6 @@
              * Here you can use your own logic!
              * For example you can use different Transition based on the current page or link...
              */
-
             return FadeTransition;
         };
     });

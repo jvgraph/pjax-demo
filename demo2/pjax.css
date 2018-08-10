@@ -71,5 +71,5 @@ body {
 }
 
 @keyframes moveFromLeftFade {
-    from { opacity: 0.3; transform: translateX(-100%); }
+    from { transform: translateX(-100%); }
 }
