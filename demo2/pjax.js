@@ -57,7 +57,6 @@
                      */
 
                     _this.done();
-                    // $(this).removeClass('moving');
                 });
             }
         });
